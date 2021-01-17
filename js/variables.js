@@ -76,21 +76,59 @@ function t04() {
 
 function t05() {        
 
+    let price = Number(document.getElementById("price").value);
+    let pros = Number(document.getElementById("percent").value);
+
+    let newPrice = (1-(pros/100))*price
+    document.getElementById("newprice").innerHTML=newPrice;
 }
 
 function t06() {
+    let today = new Date(); // current date
+    let current_year = today.getFullYear();
+
+    let birth = Number(document.getElementById("year").value)
+    let age = current_year - birth;
+    document.getElementById("age").innerHTML=age;
 
 }
 
 function t07() {
+    let seats = Number(document.getElementById("seats").value);
+    let guests = Number(document.getElementById("guests").value);
+
+    let remain = seats- guests;
+    document.getElementById('remaining').innerHTML=remain
+
 
 }
 
 function t08() {
+    let plants = Number(document.getElementById("plants").value);
+    let distance = Number(document.getElementById('distance').value)
+
+    let length1 = plants * distance //cm
+    let length2 = length1/100 //m
+    document.getElementById("length_cm").innerHTML=length1
+    document.getElementById("length_m").innerHTML=length2
 
 }
 
 function t09() {
+//  3 sausages, 5 bottles of drink, 2 tomatoes and 1 egg for each guest
+let guests = Number(document.getElementById("participant").value);
+
+let sausages = 3*guests
+let drinks = 5 * guests
+let tomatoes = 2* guests
+let eggs = 1 * guests
+
+
+document.getElementById("sausages").innerHTML=sausages
+document.getElementById("drinks").innerHTML=drinks
+document.getElementById("tomatoes").innerHTML=tomatoes
+document.getElementById("eggs").innerHTML=eggs
+
 
 }
 
