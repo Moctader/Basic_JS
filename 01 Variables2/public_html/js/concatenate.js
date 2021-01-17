@@ -38,7 +38,7 @@ function j02() {
    let width = Number(document.getElementById("width").value)
 
    let area =height * width
-   document.getElementById("area").innerHTML ="The area is " +area + " m2"
+   document.getElementById("area").innerHTML ="The area is " +area + " m2."
 
 }
 
