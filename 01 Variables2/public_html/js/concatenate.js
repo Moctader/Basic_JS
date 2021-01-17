@@ -34,6 +34,12 @@ function j01() {
 
 function j02() {
 
+   let height = Number(document.getElementById("height").value)
+   let width = Number(document.getElementById("width").value)
+
+   let area =height * width
+   document.getElementById("area").innerHTML =area + " m2"
+
 }
 
 function j03() {
