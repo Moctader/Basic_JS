@@ -43,6 +43,14 @@ function j02() {
 }
 
 function j03() {
+    
+    let number1 =Number(document.getElementById("number1").value)
+    let number2 =Number(document.getElementById("number2").value)
+
+    let sum = number1 + number2
+
+    document.getElementById("sum").innerHTML = 
+        number1 + " + " + number2 + " = " +sum;
 
 }
 
@@ -51,6 +59,18 @@ function j04() {
     const MIDDLE = ", you are ";
     const END = " years of age.";
     
+    let name =document.getElementById("name").value
+    let year3 =Number(document.getElementById("year3").value)
+
+    let today = new Date(); // current date
+    let current_year = today.getFullYear();
+    let age = current_year - year3;
+
+
+    document.getElementById("message").innerHTML = "Hello "  +name + ", you are "+age+ " years of age."
+ 
+
+
 }
 
 function j05() {
