@@ -73,7 +73,6 @@ function j04() {
 }
 
 function j05() {
-    document.getElementById("message").innerHTML = "Hello "  +name + ", you are "+age+ " years of age."
 
 
 }
