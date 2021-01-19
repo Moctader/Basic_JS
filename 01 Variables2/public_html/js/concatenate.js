@@ -73,6 +73,14 @@ function j04() {
 }
 
 function j05() {
+let number3 = Number(document.getElementById("number3").value)
+let number4 = Number(document.getElementById("number4").value)
+
+let sum2 = number3 + number4
+document.getElementById("sums").innerHTML +=
+    number3 + " + " + number4 + " = " +sum2;
+
+
 
 
 }
